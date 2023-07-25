@@ -1,3 +1,7 @@
-altair
-pandas
+matplotlib
+numpy
+xarray
+beautifulsoup4
+tqdm
 streamlit
+joblib
