@@ -31,7 +31,7 @@ def get_data(location: int, variable: Variables, models: List[Models]) -> Tuple[
         return get_model_data(location, variable, model=models[0])
 
 
-def get_multi_model_data(location: int, variable: Variables, models: List[Models]) -> tuple[bool, xarray.DataArray]:
+def get_multi_model_data(location: int, variable: Variables, models: List[Models]) -> Tuple[bool, xarray.DataArray]:
     all_data = [get_model_data(location, variable, model) for model in models]
 
     # data_arrays = [da.rename(key.name) for key, da in all_data.items()]
